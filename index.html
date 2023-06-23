@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Conversor de Longitud</h1>
+    <div class="container">
+      <div class="converter">
+        <label for="inputUnit">Unidad de entrada:</label>
+        <input type="number" id="inputUnit" placeholder="Ingrese el valor" step="any">
+        <select id="inputType">
+          <option value="cm">Centímetros (cm)</option>
+          <option value="m">Metros (m)</option>
+          <option value="km">Kilómetros (km)</option>
+        </select>
+      </div>
+      <div class="converter">
+        <label for="outputUnit">Unidad de salida:</label>
+        <input type="number" id="outputUnit" placeholder="Resultado" disabled>
+        <select id="outputType">
+          <option value="cm">Centímetros (cm)</option>
+          <option value="m">Metros (m)</option>
+          <option value="km">Kilómetros (km)</option>
+        </select>
+      </div>
+      <button onclick="convertLength()">Calcular</button>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
